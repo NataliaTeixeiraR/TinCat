@@ -1,0 +1,280 @@
+/*Geral*/
+
+body{    
+    font-family: 'Montserrat-Thin', sans-serif;
+    background-color:#F36870; 
+    color: #171515;        
+}
+
+h1, h2, h3, h4, h5{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+h1{  
+    color: #F9FBF7;     
+    padding-top: 5em ;    
+}
+
+h4{
+    color: #F36870;  
+    font-size: 3rem;    
+}
+
+h5{
+    font-size: 2rem;
+    padding-bottom: 1em;
+}
+
+p{   
+    text-align: center;
+}
+
+
+/* Navbar */ 
+
+.titulo{
+    font-family: 'Montserrat', sans-serif;
+    margin: 3em;
+    font-size: 1.5rem;    
+}
+
+.menu{    
+    font-size: 1.2em;
+}
+
+/* Banner */ 
+
+.banner{
+    padding: 5em 0 5em 0;   
+}
+
+.botao-download{
+    margin: 1.5em;
+}
+
+#smartphone{    
+    width: 18%;   
+    transform: rotate(30deg);  
+    position: absolute;
+    z-index: 1; 
+    margin-left: 8em;
+}
+
+#legenda-smartphone{
+    font-size: 0.8em;    
+    transform: rotate(30deg); 
+    position: absolute;
+    z-index: 1; 
+    padding: 34em 0em 5em 12em;
+   
+}
+
+/* Features */ 
+
+.features{
+    padding: 10em 0 10em 0;  
+    background-color: #F9FBF7; 
+    position: relative;
+    z-index: 2;  
+}
+
+.feature-imagem{
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    color: #F36870;
+    margin-top: auto;    
+}
+
+.paragrafo-feature{
+    padding-bottom: 2em;
+}
+
+/* Depoimentos*/ 
+
+#myCarousel{    
+    padding: 7em 0 7em 0;    
+}
+
+.depoimento-imagem{
+    width: 15%;
+    border-radius: 100%;
+    margin:5em 12em 5em 12em; 
+}
+
+.carousel-conteudo {
+    margin:0em;      
+    padding-left: 1.5em;
+}
+
+.depoimento{
+    font-size: 2rem;
+    padding: 0 0 2em 8em; 
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cliente{
+    padding-left: 10em;
+    font-size: 1.5rem; 
+    font-family: 'Montserrat', sans-serif;
+}
+
+.legenda{
+    font-size: 1rem; 
+    padding-left: 15em;  
+}
+
+
+  /* Preços */ 
+
+  .precos{
+    background-color: #F9FBF7;
+    color: #6C6D76;     
+  }
+
+  .titulo-precos{
+      font-size: 2.5rem;
+      color: #171515;
+      padding-top: 2em;
+  }
+
+  .tipo-plano{
+      font-size: 2rem;
+      font-family: 'Montserrat', sans-serif;
+      color: #F36870;
+  }
+
+  .subtitulo-precos{
+    font-size: 2rem;
+    margin: 3em;
+    font-family: 'Montserrat', sans-serif;
+    color: #6C6D76;
+    text-align: center;    
+  }
+
+  .card{
+    margin: 3em;
+  }
+
+  .card:hover{
+    background-color:#DBE8D8;
+  }
+
+  .card-titulo{
+    color: #6C6D76;
+    font-size: 1.5rem;
+  }
+
+  .lista-precos{
+    font-size: 1.2rem;
+    margin: 1em;
+    color: #171515;
+}
+
+
+  /* CTA */ 
+
+  .cta{
+    background-color:  #BDF0D6;
+  }
+
+ .botao-cta{
+     margin: 2.5em;     
+ }
+ 
+
+/* Contato */ 
+
+footer{
+    margin: 5em 0 0 2em;
+}
+
+ .contato-item{    
+    text-align: center;    
+ }
+
+ .contato-icon{
+    margin: 1em;  
+ }
+ 
+
+ /* Responsivo */
+
+ 
+ /* Tela pequena */
+
+ @media (max-width: 768px)
+{
+    .titulo{        
+        margin: 3em;           
+    }
+
+    .banner{
+        padding: 5em 0 5em 0;                
+    }
+
+    #smartphone{
+        width: 40%; 
+        transform: rotate(0deg);    
+        position: relative; 
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+
+    #legenda-smartphone{
+        font-size: 0.3em;    
+        transform: rotate(30deg); 
+        position: relative;
+        z-index: 1; 
+        padding-top: 0em;                 
+        align-content: center;
+        transform: rotate(0deg);  ;
+    }
+    
+    .carousel-container{       
+        margin: 0; 
+        padding: 0;
+    }
+    
+    .depoimento-imagem{
+        width: 30%;
+        border-radius: 100%;  
+        padding: 0 0 0 0;
+        margin: 0.5em 0 0 0;
+    }
+    
+    .depoimento{
+        align-items: center;
+        font-size: 0.5rem;     
+        margin: 0;   
+        padding: 0 0 0 5em; 
+    }
+    
+    .cliente{               
+        align-items: center;
+        font-size: 0.5rem;
+        margin: 0.5em 0 0 0;
+        padding: 0 0 0 5em; 
+    }
+    
+    .legenda{
+        align-items: center;
+        font-size: 0.5rem;   
+        padding: 0 0 0 5em; 
+        margin: 0.5em 0 0 0;
+    }
+     
+    .subtitulo-precos{
+        font-size: 2rem;
+        margin: 1em;
+        font-family: 'Montserrat', sans-serif;
+        color: #6C6D76;
+        text-align: center;    
+    }
+
+  }
+
+ 
+  
