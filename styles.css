@@ -128,7 +128,7 @@ p{
 
   /* Preços */ 
 
-  .precos{
+  #precos{
     background-color: #F9FBF7;
     color: #6C6D76;     
   }
@@ -175,7 +175,7 @@ p{
 
   /* CTA */ 
 
-  .cta{
+  #cta{
     background-color:  #BDF0D6;
   }
 
