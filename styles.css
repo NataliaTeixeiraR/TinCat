@@ -33,14 +33,15 @@ p{
 
 /* Navbar */ 
 
-.titulo{
+.navbar #titulo{
     font-family: 'Montserrat', sans-serif;
     margin: 3em;
     font-size: 1.5rem;    
 }
 
-.menu{    
+.navbar .menu{    
     font-size: 1.2em;
+    text-decoration: none;
 }
 
 /* Banner */ 
@@ -49,11 +50,11 @@ p{
     padding: 5em 0 5em 0;   
 }
 
-.botao-download{
+.banner .botao-download{
     margin: 1.5em;
 }
 
-#smartphone{    
+.banner #smartphone{    
     width: 18%;   
     transform: rotate(30deg);  
     position: absolute;
@@ -61,7 +62,7 @@ p{
     margin-left: 8em;
 }
 
-#legenda-smartphone{
+.banner #legenda-smartphone{
     font-size: 0.8em;    
     transform: rotate(30deg); 
     position: absolute;
@@ -79,7 +80,7 @@ p{
     z-index: 2;  
 }
 
-.feature-imagem{
+.features .feature-imagem{
     display: block;
     margin-left: auto;
     margin-right: auto; 
@@ -87,86 +88,86 @@ p{
     margin-top: auto;    
 }
 
-.paragrafo-feature{
+.features .paragrafo-feature{
     padding-bottom: 2em;
 }
 
 /* Depoimentos*/ 
 
-#myCarousel{    
+.carousel-container #myCarousel{    
     padding: 7em 0 7em 0;    
 }
 
-.depoimento-imagem{
+.carousel-container .depoimento-imagem{
     width: 15%;
     border-radius: 100%;
     margin:5em 12em 5em 12em; 
 }
 
-.carousel-conteudo {
+.carousel-container .carousel-conteudo {
     margin:0em;      
     padding-left: 1.5em;
 }
 
-.depoimento{
+.carousel-container .depoimento{
     font-size: 2rem;
     padding: 0 0 2em 8em; 
     font-family: 'Montserrat', sans-serif;
 }
 
-.cliente{
+.carousel-container .cliente{
     padding-left: 10em;
     font-size: 1.5rem; 
     font-family: 'Montserrat', sans-serif;
 }
 
-.legenda{
+.carousel-container .legenda{
     font-size: 1rem; 
     padding-left: 15em;  
 }
 
 
-  /* Preços */ 
+/* Preços */ 
 
-  .precos{
+#precos{
     background-color: #F9FBF7;
     color: #6C6D76;     
-  }
+}
 
-  .titulo-precos{
-      font-size: 2.5rem;
-      color: #171515;
-      padding-top: 2em;
-  }
+#precos .titulo-precos{
+    font-size: 2.5rem;
+    color: #171515;
+    padding-top: 2em;
+}
 
-  .tipo-plano{
-      font-size: 2rem;
-      font-family: 'Montserrat', sans-serif;
-      color: #F36870;
-  }
+#precos .tipo-plano{
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #F36870;
+}
 
-  .subtitulo-precos{
+#precos .subtitulo-precos{
     font-size: 2rem;
     margin: 3em;
     font-family: 'Montserrat', sans-serif;
     color: #6C6D76;
     text-align: center;    
-  }
+}
 
-  .card{
+#precos .card{
     margin: 3em;
-  }
+}
 
-  .card:hover{
+#precos .card:hover{
     background-color:#DBE8D8;
-  }
+}
 
-  .card-titulo{
+#precos .card-titulo{
     color: #6C6D76;
     font-size: 1.5rem;
-  }
+}
 
-  .lista-precos{
+#precos .lista-precos{
     font-size: 1.2rem;
     margin: 1em;
     color: #171515;
@@ -175,13 +176,13 @@ p{
 
   /* CTA */ 
 
-  .cta{
+#cta{
     background-color:  #BDF0D6;
-  }
+}
 
- .botao-cta{
+#cta .botao-download{
      margin: 2.5em;     
- }
+}
  
 
 /* Contato */ 
@@ -190,13 +191,13 @@ footer{
     margin: 5em 0 0 2em;
 }
 
- .contato-item{    
+#footer .contato-item{    
     text-align: center;    
- }
+}
 
- .contato-icon{
+#footer .contato-icon{
     margin: 1em;  
- }
+}
  
 
  /* Responsivo */
@@ -204,17 +205,19 @@ footer{
  
  /* Tela pequena */
 
- @media (max-width: 768px)
+ @media screen and (max-width: 768px) and (min-width: 0px)
 {
-    .titulo{        
+    /* Navbar */ 
+    .navbar .titulo{        
         margin: 3em;           
     }
 
+    /*Banner*/
     .banner{
         padding: 5em 0 5em 0;                
     }
 
-    #smartphone{
+    .banner #smartphone{
         width: 40%; 
         transform: rotate(0deg);    
         position: relative; 
@@ -223,7 +226,7 @@ footer{
         margin-right: auto; 
     }
 
-    #legenda-smartphone{
+    .banner #legenda-smartphone{
         font-size: 0.3em;    
         transform: rotate(30deg); 
         position: relative;
@@ -233,47 +236,48 @@ footer{
         transform: rotate(0deg);  ;
     }
     
+    /*Carousel*/
     .carousel-container{       
         margin: 0; 
         padding: 0;
     }
     
-    .depoimento-imagem{
+    .carousel-container .depoimento-imagem{
         width: 30%;
         border-radius: 100%;  
         padding: 0 0 0 0;
         margin: 0.5em 0 0 0;
     }
     
-    .depoimento{
+    .carousel-container .depoimento{
         align-items: center;
         font-size: 0.5rem;     
         margin: 0;   
         padding: 0 0 0 5em; 
     }
     
-    .cliente{               
+    .carousel-container .cliente{               
         align-items: center;
         font-size: 0.5rem;
         margin: 0.5em 0 0 0;
         padding: 0 0 0 5em; 
     }
     
-    .legenda{
+    .carousel-container .legenda{
         align-items: center;
         font-size: 0.5rem;   
         padding: 0 0 0 5em; 
         margin: 0.5em 0 0 0;
     }
      
-    .subtitulo-precos{
+    /*Preços*/
+    #precos .subtitulo-precos{
         font-size: 2rem;
         margin: 1em;
         font-family: 'Montserrat', sans-serif;
         color: #6C6D76;
         text-align: center;    
     }
-
   }
 
  
